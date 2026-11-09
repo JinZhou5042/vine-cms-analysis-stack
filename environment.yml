@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - awkward=2.8.7
+  - awkward>=2.8.11
   - coffea>=2025.10.2
   - fsspec-xrootd>=0.5.1
   - matplotlib>=3.11.1,<4
@@ -18,3 +18,5 @@ dependencies:
   - zstandard>=0.25.0
   - pip:
       - vine-reduce>=2026.9.8
+variables:
+  PYTHONPATH: ""

@@ -41,7 +41,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 MANAGER_NAME = f"{getpass.getuser()}-trijet-tutorial"
 
-SKIM_DIR = f"/project01/ndcms/users/{getpass.getuser()}/trijet-skims"
+SKIM_DIR = f"/project01/ndcms/{getpass.getuser()}/trijet-skims"
 
 MASS_LOW, MASS_HIGH = 150, 195
 
