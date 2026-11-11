@@ -40,7 +40,7 @@ dev = [
     "flake8>=3.8",
 ]
 conda = [
-    "ndcctools>=7.17.1",
+    "ndcctools>=7.17.6",
 ]
 
 [project.urls]
@@ -70,14 +70,14 @@ filterwarnings = [
 
 [tool.pixi.workspace]
 channels = ["conda-forge"]
-platforms = ["linux-64", "osx-64", "osx-arm64"]
+platforms = ["linux-64"]
 
 [tool.pixi.dependencies]
 awkward = ">=2.8.9"
 coffea = ">=2025.10.2"
 fsspec = ">=2026.7.0"
 fsspec-xrootd = ">=0.5.1"
-ndcctools = ">=7.17.1"
+ndcctools = ">=7.17.6"
 numpy = ">=2.4.6"
 python = ">=3.12.11"
 rich = ">=14.2.0"
