@@ -17,6 +17,6 @@ dependencies:
   - setuptools<81
   - zstandard>=0.25.0
   - pip:
-      - vine-reduce>=2026.9.8
+      - vine-reduce>=2026.11.1
 variables:
   PYTHONPATH: ""

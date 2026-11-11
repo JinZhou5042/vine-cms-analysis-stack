@@ -437,8 +437,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/widgetsnbextension-4.0.16-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
       - pypi: ./
+      - pypi: https://files.pythonhosted.org/packages/0b/59/29f16077ee4f1c0d788b6b3556a439deb72806b8c79878e4a4e4761a3de6/vine_reduce-2026.11.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/63/4b/e3678b4e776db00f9f7b2fe58e547e8928ef32727d7a1ff01dea010f3f13/zstandard-0.25.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/76/1f/dcb0656839d7ab6295e18a0d15128379cd8ab58fa954d95443b99d3c1a00/vine_reduce-2026.9.8-py3-none-any.whl
   dev:
     channels:
     - url: https://conda.anaconda.org/conda-forge/
@@ -1759,8 +1759,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/widgetsnbextension-4.0.16-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
       - pypi: ./
+      - pypi: https://files.pythonhosted.org/packages/0b/59/29f16077ee4f1c0d788b6b3556a439deb72806b8c79878e4a4e4761a3de6/vine_reduce-2026.11.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/63/4b/e3678b4e776db00f9f7b2fe58e547e8928ef32727d7a1ff01dea010f3f13/zstandard-0.25.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/76/1f/dcb0656839d7ab6295e18a0d15128379cd8ab58fa954d95443b99d3c1a00/vine_reduce-2026.9.8-py3-none-any.whl
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-8_kmp_llvm.conda
   build_number: 8
@@ -9062,7 +9062,7 @@ packages:
   - pytest-cov>=2.0 ; extra == 'dev'
   - black>=21.0 ; extra == 'dev'
   - flake8>=3.8 ; extra == 'dev'
-  - ndcctools>=7.17.1 ; extra == 'conda'
+  - ndcctools>=7.17.6 ; extra == 'conda'
   requires_python: '>=3.12.11'
 - pypi: ./
   name: vine-cms-analysis-stack
@@ -9075,7 +9075,28 @@ packages:
   - rich>=14.2.0
   - uproot>=5.6.6
   - xrootd>=5.8.1
-  - vine-reduce>=2026.9.8
+  - vine-reduce>=2026.11.1
+  - pytest>=6.0 ; extra == 'dev'
+  - pytest-cov>=2.0 ; extra == 'dev'
+  - black>=21.0 ; extra == 'dev'
+  - flake8>=3.8 ; extra == 'dev'
+  - ndcctools>=7.17.6 ; extra == 'conda'
+  requires_python: '>=3.12.11'
+- pypi: https://files.pythonhosted.org/packages/0b/59/29f16077ee4f1c0d788b6b3556a439deb72806b8c79878e4a4e4761a3de6/vine_reduce-2026.11.1-py3-none-any.whl
+  name: vine-reduce
+  version: 2026.11.1
+  sha256: c673107f4ae0450387a64121a46c58b7457b6eba744a79500cfd4cf7dbc61ae2
+  requires_dist:
+  - awkward>=2.8.9
+  - coffea>=2025.10.2
+  - fsspec>=2026.7.0
+  - fsspec-xrootd>=0.4.0
+  - numpy>=2.2.6
+  - pyyaml>=5.4.1
+  - rich>=14.1.0
+  - uproot>=5.6.6
+  - xrootd>=5.8.1
+  - zstandard>=0.25.0
   - pytest>=6.0 ; extra == 'dev'
   - pytest-cov>=2.0 ; extra == 'dev'
   - black>=21.0 ; extra == 'dev'
@@ -9090,23 +9111,3 @@ packages:
   - cffi~=1.17 ; python_full_version < '3.14' and platform_python_implementation != 'PyPy' and extra == 'cffi'
   - cffi>=2.0.0b0 ; python_full_version >= '3.14' and platform_python_implementation != 'PyPy' and extra == 'cffi'
   requires_python: '>=3.9'
-- pypi: https://files.pythonhosted.org/packages/76/1f/dcb0656839d7ab6295e18a0d15128379cd8ab58fa954d95443b99d3c1a00/vine_reduce-2026.9.8-py3-none-any.whl
-  name: vine-reduce
-  version: 2026.9.8
-  sha256: f7f53b675cf6268aa629905011fb9a74be686939482b3409eeca8802fbf1a9d3
-  requires_dist:
-  - awkward>=2.8.7
-  - coffea>=2025.7.3
-  - fsspec>=2026.7.0
-  - fsspec-xrootd>=0.5.1
-  - numpy>=2.4.6
-  - rich>=14.2.0
-  - uproot>=5.6.6
-  - xrootd>=5.8.4
-  - zstandard>=0.25.0
-  - pytest>=6.0 ; extra == 'dev'
-  - pytest-cov>=2.0 ; extra == 'dev'
-  - black>=21.0 ; extra == 'dev'
-  - flake8>=3.8 ; extra == 'dev'
-  - ndcctools>=7.17.1 ; extra == 'conda'
-  requires_python: '>=3.13'
