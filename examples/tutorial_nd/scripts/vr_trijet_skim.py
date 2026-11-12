@@ -1,4 +1,4 @@
-"""Module 7's script - a skim instead of histograms, over the same real data
+"""Module 8's script - a skim instead of histograms, over the same real data
 as Module 4 (data/datasets_xrootd.json: 5 datasets), on the HTCondor pool.
 
 The processor keeps every event whose best trijet (the one with mass

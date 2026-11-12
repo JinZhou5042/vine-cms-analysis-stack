@@ -69,14 +69,14 @@ instead of as an edit-it-yourself exercise.
   `diff` between the two files.
 - **Pairs.** Every script has an `_rdf` twin with the same behavior and the
   same printed totals (3,736,416 events; 1,697,939 entries per histogram, up
-  to the edge-of-window rounding noted in Module 8).
+  to the edge-of-window rounding noted in Module 7).
 - **Manifests.** `datasets_vast.json` and `datasets_xrootd.json` list the same
   15 files in 5 datasets by absolute path; the first for login nodes, the
   second for pool nodes. Paths are absolute because TaskVine tasks run in a
   worker sandbox where a relative path would not resolve.
 - **Failure semantics.** A missing `/project01` or an unreachable xrootd host
   makes the first chunk fail; VineReduce retries it and then gives up on the
-  file (see Module 9). Nothing here retries or falls back on its own.
+  file (see Module 10). Nothing here retries or falls back on its own.
 
 ### Non-goals
 

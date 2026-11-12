@@ -1,4 +1,4 @@
-"""Module 9's script - Module 2's scripts/vr_trijet_iterative_rdf.py over the
+"""Module 10's script - Module 2's scripts/vr_trijet_iterative_rdf.py over the
 same data/datasets_vast.json, plus one file that doesn't exist in each of
 the 5 datasets, to show failure_proportion.
 

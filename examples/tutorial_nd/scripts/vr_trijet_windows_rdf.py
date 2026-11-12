@@ -1,4 +1,4 @@
-"""Module 8's script - Module 4's scripts/vr_trijet_condor_rdf.py, but with a
+"""Module 7's script - Module 4's scripts/vr_trijet_condor_rdf.py, but with a
 small family of processors instead of one: the same trijet analysis, keeping
 only events whose best trijet mass lies within +/-10, +/-25, or +/-50 GeV of
 172.5 GeV (the top quark mass).

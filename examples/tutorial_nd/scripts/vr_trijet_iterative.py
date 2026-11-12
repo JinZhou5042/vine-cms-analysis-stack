@@ -39,7 +39,7 @@ def trijet_processor(events):
     `events` NanoEvents array in, any picklable object out (here, a dict of
     two Hists). VineReduceCoffea's default reducer already knows how to sum
     plain Hists and dicts of them across chunks, so no custom reducer is
-    needed here (contrast with Module 7's result_postprocess)."""
+    needed here (contrast with Module 8's result_postprocess)."""
     jets = ak.zip(
         {k: getattr(events.Jet, k) for k in ["x", "y", "z", "t", "btag"]},
         with_name="LorentzVector",
