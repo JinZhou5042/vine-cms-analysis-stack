@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build the env on local /tmp, without touching NFS. Usage (in vine-cms-analysis-stack/): bash tmp-conda.sh
+# source /tmp/$(id -un)-tmp/activate.sh
 set -e
 BASE=/tmp/$(id -un)-tmp
 
